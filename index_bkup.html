@@ -34,7 +34,6 @@
     h2{
         font-size: 3em;
         margin: 0;
-        padding:0;
         font-family: 'Raleway', sans-serif,arial,helvetica;
         font-weight: 200;
     }
@@ -86,10 +85,10 @@
         margin: 40px 0 0 0;
     }
     #section0 h1{
-        position: absolute;
-        top: 50%;        
+        position: relative;
         right: 100px;
         float: right;
+        top: 400px;
     }
 
 
@@ -110,7 +109,9 @@
 
     #section1 .box{
         position: absolute;
-        top: 50%;
+        top: 60%;
+        margin-top: -192px;
+        width: 2000px;
         z-index: 1;
     }
     #section1 .imgsContainer{
@@ -186,11 +187,6 @@
     #section2{
         background-image: url(imgs/sbg2.jpg);
     }
-
-    #section2 .wrap{
-        float: right;
-    }
-    
     #section2 img{
         position:absolute;
     }
@@ -226,9 +222,10 @@
     }
 
     #section2 .box{
-        top: 30%;
-        left: 10%;
+        top: 22%;
+        left: 42%;
         position: absolute;
+        width: 582px;
     }
 
     #iphone-yellow{
@@ -304,7 +301,7 @@
     * --------------------------------------- */
     #section3{
         /*background-image: url(imgs/sbg4.jpg);*/
-        background:linear-gradient(#6D5E7B,#5C6674);
+          background:linear-gradient(#6D5E7B,#5C6674);
 
     }
     #section3 .imgsContainer{
@@ -317,13 +314,8 @@
         position: absolute;
     }
     #section3 .box{
-        position: absolute;
         text-align: center;
-        top: 20%;
-        width: 100%;
-    }
-    #section3 li{
-        font-size: 1.6em;
+        margin: 20% 0 0 0;
     }
 
     /* Section 4
@@ -335,17 +327,17 @@
     }
     #section4 .box{
         text-align: center;
+        margin: 20% 0 0 0;
         color: white;
     }
-    #section4 .wrap{
-        float:right;
-    }
-
     #section4 h2{
         position: absolute;
-        bottom: 150px;
+        height: 100px;
+        width: 900px;
+        top: 700px;
         right: 100px;
         color: white;
+
     }
 
     /* Section 5
@@ -356,19 +348,12 @@
         
     }
     #section5 .box{
-        position: absolute;
         text-align: center;
+        margin: 20% 0 0 0;
         color: white;
         height: 400px;
-        top: 20%;
-        width: 100%;
         background: url(imgs/newnoise.svg) no-repeat;
         background-position: center center; 
-    }
-
-    #section5 h2{
-        position: relative;
-        top: 40%;
     }
 
     /* Overwriting fullPage.js tooltip color
@@ -432,13 +417,13 @@
 <body>
 
 <div id="fullpage">
-    <!--<div id="staticImg">
+    <div id="staticImg">
         <div class="imgsContainer">
-            <img src="imgs/iphone-green.png" alt="iphone" id="iphone-green" />
+            <!--<img src="imgs/iphone-green.png" alt="iphone" id="iphone-green" />-->
         </div>
-    </div>-->
+    </div>
 
-    <div class="section" id="section0">
+    <div class="section " id="section0">
         <h1>Smart Shoppee</h1>
     </div>
     <div class="section" id="section1">
@@ -450,13 +435,13 @@
             </div>-->
 
             <div class="box">
-                <h2> When was the last time this happened?</h2><br/>
-                <h2> Ever dropped off your cart?</h2><br/>
+                <h2> When was the last time you came across this scene?</h2><br/>
+                <h2> Ever got frustrated enough to drop off your cart?</h2><br/>
             </div>
         </div>
     </div>
 
-    <div class="section" id="section2">
+    <div class="section moveDown" id="section2">
         <div class="wrap">
             <!--<div class="imgsContainer">
                 <img src="imgs/iphone-yellow.png" alt="iphone" id="iphone-yellow" />
@@ -464,19 +449,17 @@
                 <img src="imgs/iphone-blue.png" alt="iphone" id="iphone-blue" />
             </div>-->
             <div class="box">
-                <h1>A Powerful <br/><br/><br/>New Product</h1>
-                <br/><br/><br/>
-                <h2>Join our ecosystem for a more fluid<br/><br/> and enjoyable shopping experience.</h2>
+                <h2 Style="width:1500px; font-size: 80px; top: 100px; left:100px;">A powerful new product</h2>
             </div>
         </div>
+        <div Style="font-size: 50px;position: absolute;top: 400px;right: 100px;width: 1000px;">Join our ecosystem for a more fluid and enjoyable shopping experience.</div>
     </div>
 
-    <div class="section" id="section3">
+    <div class="section moveDown" id="section3">
         <div class="wrap">
             <div class="box">
-                <h1>Features</h1><br/><br/>
-                <br/><br/><br/>
-                <ul>
+                <div Style="width: 1000px;font-size: 70px;position: absolute; height: 200px;font-weight: 300;">What do you gain from it?</div><br/><br/>
+                <br/><br/><br/><ul style="font-size:30px;">
                     <li>Scan items and prepare your own cart</li><br/>
                     <li>Comfortable and quick checkouts at Shops</li><br/>
                     <li>Price comparisons and Reviews</li><br/>
@@ -491,16 +474,17 @@
     </div>
     <div class="section moveDown" id="section4">
         <div class="wrap">
-            <div class="box" >   
-                <h2 style="font-size: 3em">Help us make shopping<br/><br/>smarter and faster!</h2>                             
+            <div class="box" >                                
             </div>                       
         </div>
+        <h2 style="font-size: 3em">Help us make the shopping experience of your consumers smarter and faster!</h2> 
     </div>
     <div class="section moveDown" id="section5">
         <div class="wrap">
-            <div class="box">
-                <h2 style="font-size: 3em">Contact Us</h2><br/>
-                <h2 style="font-size: 1em">Queries@smartshoppee.in</h2>
+            <div class="box" id="section5box">
+                <br/>
+                <h2 style="position:relative; top:150px; font-size: 3em">Contact Us</h2><br/><br/>
+                <h2 style="position:relative; top:100px; font-size: 1em">Queries@smartshoppee.in</h2>
             </div>            
         </div>
     </div>
